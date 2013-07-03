@@ -18,4 +18,4 @@ The ReignSDK-Tools is copyright to Andrew Witte and Philip Witte and is under th
 You should have received a copy of the BSD 2-Clause License along with this program.
 If not, see "licence.txt" or go to "http://www.opensource.org/licenses/bsd-license.php".
 
-All other 3rd party libraries and or source code contained or used within the ReignSDK, are subject to there own legal agreements.
+All other 3rd party libraries and or source code contained or used within the ReignSDK-Tools, are subject to there own legal agreements.
