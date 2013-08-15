@@ -107,5 +107,19 @@ namespace TimeCalculator
 			timeGrid.RowDefinitions.RemoveAt(nextRow-1);
 			--nextRow;
 		}
+
+		private void simpleConvert_Click(object sender, RoutedEventArgs e)
+		{
+			var values = simpleConvertTime.Text.Split(new char[]{'*'});
+			string timeValue = (values.Length >= 1) ? values[0].Trim() : "00:00";
+			decimal mulValue = 1;
+			if (values.Length >= 2) decimal.TryParse(values[1].Trim(), out mulValue);
+
+			TimeSpan time;
+			if (TimeSpan.TryParse(timeValue, out time))
+			{
+				simpleConvertDecimal.Content = (time.Hours + (time.Minutes / 60m)) * mulValue;
+			}
+		}
 	}
 }

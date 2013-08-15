@@ -18,6 +18,11 @@
 			<TextBox Name="newTimeList" HorizontalAlignment="Left" Margin="10,0,0,192" TextWrapping="Wrap" Text="00:00" Width="104" Height="23" VerticalAlignment="Bottom"/>
 			<ListBox Name="timeListBox" HorizontalAlignment="Left" Margin="10,0,0,41" Width="104" Height="146" VerticalAlignment="Bottom"/>
 			<Label Name="totalTimeList" Content="Total: 00:00" HorizontalAlignment="Left" Margin="10,0,0,10" Width="104" Height="26" VerticalAlignment="Bottom"/>
+
+			<Label Content="Convert To Dec" HorizontalAlignment="Left" Margin="10,0,0,348" VerticalAlignment="Bottom" Width="104"/>
+			<Button Content="Convert" HorizontalAlignment="Left" Margin="25,0,0,327" VerticalAlignment="Bottom" Width="75" Click="simpleConvert_Click"/>
+			<TextBox Name="simpleConvertTime" HorizontalAlignment="Left" Height="23" Margin="10,0,0,299" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Bottom" Width="104"/>
+			<Label Name="simpleConvertDecimal" Content="0.00" HorizontalAlignment="Left" Height="23" Margin="10,0,0,271" VerticalAlignment="Bottom" Width="104"/>
 		</Grid>
 	</Grid>
 </Window>
